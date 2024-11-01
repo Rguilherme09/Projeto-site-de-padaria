@@ -1,17 +1,28 @@
-body {
+*{
     margin: 0;
+    padding: 0;
+}
+
+body {
     background-color: #f4f0e5;
     font-family: Tahoma;
 }
 
+.imagem-logotipo {
+    width: 200px;
+}
+
 .secao {
-    width: 700px;
+    padding: 20px 0px;
+    width: 100%;
     margin: 20px auto;
     text-align: center;
 }
 
-.imagem-logotipo {
-    width: 200px;
+.imagem-banner {
+    width: 700px;
+    box-shadow: 1px 5px 10px rgb(0, 0, 0);
+    border-radius: 5px;
 }
 
 a {
@@ -31,16 +42,22 @@ h2 {
     font-weight: normal;
     color: #de8e37;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-.imagem-banner {
-    width: 700px;
+p {
+    margin-bottom: 20px;
+}
+
+.produtos {
+    margin-top: 20px;
 }
 
 .secao-destaque {
+    width: 700px;
     background-color: #de8e37;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 35px;
     color: white;
 }
 
@@ -50,7 +67,7 @@ h2 {
 
 .secao-destaque h4 {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin: 20px 0;
 }
 
 .secao-destaque p {
@@ -61,8 +78,30 @@ h2 {
 
 .secao-destaque img {
     width: 400px;
+    box-shadow: 1px 5px 10px rgb(0, 0, 0);
+    border-radius: 5px;
 }
 
 span {
     font-weight: bold;
+    
+}
+
+@media screen and (max-width: 750px) {
+    .imagem-banner {
+        width: 100%;
+    }
+
+    .secao-destaque {
+        width: 100%;
+        background-color: #de8e37;
+        padding: 15px 0 35px 0;
+        color: white;
+    }
+
+    .secao-destaque p {
+        width: 100%;
+        margin: 0 auto;
+        line-height: 30px;
+    }
 }
